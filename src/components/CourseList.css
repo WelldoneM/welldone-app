@@ -13,12 +13,22 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    cursor: pointer
   }
  
-  .course-card.selected, .course-card:hover {
-    background-color: #e8acd1; 
+  .course-card.selected{
+    background-color: #f2cce4; 
   }
 
-  .course-card {
-    cursor: pointer; 
+
+  .course-card:hover {
+    background-color: #f2d7e8;  
   }
+
+
+
+  .course-card.unselectable {
+    background-color:#c1bbbf;
+    opacity: 0.6; 
+    pointer-events: none;  
+ }
