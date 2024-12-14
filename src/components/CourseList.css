@@ -14,7 +14,11 @@
     overflow: hidden;
     transition: transform 0.3s ease;
   }
-  
-  .course-card:hover {
-    transform: scale(1.05);
+ 
+  .course-card.selected, .course-card:hover {
+    background-color: #e8acd1; 
+  }
+
+  .course-card {
+    cursor: pointer; 
   }
